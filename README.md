@@ -64,8 +64,7 @@ mini-rag-chatbot/
 ## Setup Instructions
 
 1. Clone the repo
-git clone https://github.com/yourusername/mini-rag-chatbot.git
-cd mini-rag-chatbot
+<pre> ```bash git clone https://github.com/yourusername/mini-rag-chatbot.git cd mini-rag-chatbot ``` </pre>
 
 
 2. Install dependencies
