@@ -34,6 +34,7 @@ Mini-RAG-Chatbot is a lightweight Retrieval-Augmented Generation (RAG) system th
 
 
 ## Project Structure
+```
 mini-rag-chatbot/
 │
 ├── data/                  # Custom knowledge base files (e.g., .txt, .pdf)
@@ -45,7 +46,7 @@ mini-rag-chatbot/
 ├── requirements.txt       # Dependencies
 ├── README.md              # Project overview and documentation
 └── .gitignore
-
+```
 
 ## How It Works
 1. Document Ingestion: Loads .txt files from the data/ directory
@@ -66,36 +67,45 @@ mini-rag-chatbot/
 1. Clone the repo
    
 ```bash
-    git clone https://github.com/yourusername/mini-rag-chatbot.git
-    cd mini-rag-chatbot
+git clone https://github.com/yourusername/mini-rag-chatbot.git
+cd mini-rag-chatbot
 ```
 
 
-2. Install dependencies
+2. Create a virtual environment
+
+* On macOS / Linux:
 
 ```bash   
-python -m venv venv
-source venv/bin/activate     # or use venv\Scripts\activate on Windows
-pip install -r requirements.txt
+python3 -m venv venv
+source venv/bin/activate
 ```
 
+* On Windows (CMD):
 
-4. Add your documents
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+3. Add your documents
 
 ```bash
 Place your .txt files inside the data/ folder.
 ```
 
-6. Build FAISS index
+4. Install required packages
 
 ```bash
-python src/embedder.py
+pip install --upgrade pip
+pip install -r requirements.txt
 ```
 
-8. Run the chatbot
+5. Run the project
 
 ```bash
-python src/app.py
+python src/embedder.py     # Build FAISS vector index
+python src/app.py          # Launch Gradio chatbot interface
 ```
 
 ## Example
@@ -130,4 +140,8 @@ Retrieval-Augmented Generation (RAG) enhances LLMs by grounding their outputs in
 * Learned how to create usable AI interfaces with Gradio
 
 * Practiced clean, modular Python design for reproducibility
+
+
+## License
+This project is open-source under the MIT License.
 
