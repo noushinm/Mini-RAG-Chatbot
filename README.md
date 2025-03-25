@@ -64,26 +64,39 @@ mini-rag-chatbot/
 ## Setup Instructions
 
 1. Clone the repo
-<pre> ```bash git clone https://github.com/yourusername/mini-rag-chatbot.git cd mini-rag-chatbot ``` </pre>
+   
+```bash
+    git clone https://github.com/yourusername/mini-rag-chatbot.git
+    cd mini-rag-chatbot
+```
 
 
 2. Install dependencies
+
+```bash   
 python -m venv venv
 source venv/bin/activate     # or use venv\Scripts\activate on Windows
 pip install -r requirements.txt
+```
 
 
-3. Add your documents
+4. Add your documents
+
+```bash
 Place your .txt files inside the data/ folder.
+```
 
+6. Build FAISS index
 
-4. Build FAISS index
+```bash
 python src/embedder.py
+```
 
+8. Run the chatbot
 
-5. Run the chatbot
+```bash
 python src/app.py
-
+```
 
 ## Example
 Question:
