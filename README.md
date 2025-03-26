@@ -108,15 +108,6 @@ python src/embedder.py     # Build FAISS vector index
 python src/app.py          # Launch Gradio chatbot interface
 ```
 
-## Example
-Question:
-
-What are the benefits of using retrieval-augmented generation?
-
-Answer:
-
-Retrieval-Augmented Generation (RAG) enhances LLMs by grounding their outputs in external context, improving factual accuracy and domain specificity. It combines document retrieval with generative capabilities for more reliable answers.
-
 
 ## Future Work
  * Add support for .pdf or .docx ingestion
